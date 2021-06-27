@@ -8,6 +8,9 @@
 header {
     padding: 20px 35px;
     background-color: #2F3663;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   header h1 {
@@ -15,7 +18,6 @@ header {
     font-size: 36px;
     color: #69709B;
     margin: 0;
-    display: inline;
     background-color: #69709B;
     padding-left: 100px;
     padding-right: 20px;
@@ -31,13 +33,17 @@ header {
   }
 
   header nav {
-    float: right;
     margin: 7px 0;
   }
 
-  header nav ul li {
-    display: inline;
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
   }
+
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
@@ -60,10 +66,129 @@ header {
     padding: 20px;
     width: 350px;
     color: #2F3663;
-    border: solid 3px #2F3663;
     position: absolute;
     bottom: 20px;
     right: 20px;
     text-align: center;
     font-weight: 400;
+    opacity: 90%;
+}
+.hero h3 a {
+  text-decoration: none;
+}
+.hero h3 a:visited{ 
+  color: #2F3663;
+}
+
+.title {
+  font-size: 55px;
+  color: #024e76;
+  border-right: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 35px auto 35px auto;
+  width: 30%;
+float: left;}
+
+.about p {
+  width: 50%;
+  display: flex;
+  float: right;
+  margin: 35px auto 35px auto;
+  color: #024e76;
+
+}
+
+.my-work {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work {
+  margin: 20px;
+  color: #adadad;
+  flex: 1;
+}
+
+.robot {
+  background-image: url("../images/armour.jpg");
+  background-size: cover;
+}
+.run {
+  background-image: url("../images/run.jpg");
+  background-size: cover;
+}
+
+.work-bio {
+  padding: 25px;
+  line-height: 1.3;
+
+}
+
+.work-bio h3 {
+  font-size: 28px;
+}
+
+.work-bio h3 a {
+  text-decoration: none;
+
+}
+
+.work-bio h4 {
+  font-weight: lighter;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+footer {
+  padding: 20px 35px;
+  background-color: #2F3663;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  background-color: #69709B;
+  padding-left: 100px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 100;
+}
+
+footer a {
+  color: #69709B;
+  text-decoration: none;
+}
+
+footer nav {
+  margin: 7px 0;
+}
+
+footer a,
+.twitter-follow-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+footer nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+  color: #69709B;
+  font-weight: 400;
+}
+
+.work-bio h3 a:visited{ 
+  color: #adadad;
 }
